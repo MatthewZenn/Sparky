@@ -1,5 +1,5 @@
 ' Default Pin is "15287"
-' if you don't want a password, just remove the "if then" statement in line 59
+' if you don't want a password, just remove the "if then" statement in line 59 and delete line 17
 
 Dim WSH, FSO, RunIPConfig, TempDir, CMD, OpenFile, AllText, IntStr1, IntCounter 
 Dim FileExist, IPText, IntStr2, IPStart, IPEnd, IPDiff, IPAddress, StartPos, IntStr3, IPAddress1 
