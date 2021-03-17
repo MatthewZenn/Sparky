@@ -14,12 +14,12 @@ echo ""
 printf " "%s"\033[1;91mCurrent_User:\033[0m\n"
 id -un
 printf " "%s"\033[1;91mDevice_Manufacturer:\033[0m\n" 
-cat /sys/devices/virtual/dmi/id/sys_vendor
+cat /sys/class/dmi/
 printf " "%s"\033[1;91mOS_Type:\033[0m\n" 
 uname
 printf " "%s"\033[1;91mOS_Version:\033[0m\n"
-cat /sys/devices/virtual/dmi/id/bios_version
+cat /proc/version
 printf " "%s"\033[1;91mIP_Address:\033[0m\n" 
-ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/'
+hostname -i
 printf ""%s""
 echo ""
